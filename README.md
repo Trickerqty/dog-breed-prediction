@@ -20,25 +20,45 @@ Built and deployed with **PyTorch**, **JupyterLab**, and **Streamlit**.
 
 Dog Breed/
 ├─ app/
+
 │ ├─ app.py # Streamlit inference app
+
 │ ├─ assets/
+
 │ │ └─ class_names.json # (optional) breed labels
+
 │
+
 ├─ data/
+
 │ ├─ raw/ # Original Kaggle dataset
+
 │ │ ├─ train/
+
 │ │ ├─ test/
+
 │ │ └─ labels.csv
+
 │ ├─ processed/ # (optional) organized data
+
 │
+
 ├─ models/
+
 │ ├─ run_20251109_153000/ # auto-created per training run
+
 │ │ └─ resnet50_dogbreed.pth
+
 │
+
 ├─ notebooks/
+
 │ └─ 01_dog_breed_prediction.ipynb
+
 │
+
 ├─ requirements.txt
+
 └─ README.md
 
 
@@ -80,8 +100,11 @@ Download from Kaggle: (https://www.kaggle.com/competitions/dog-breed-identificat
 Extract into:
 
 data/raw/
+
   ├─ train/
+  
   ├─ test/
+  
   └─ labels.csv
 
 
