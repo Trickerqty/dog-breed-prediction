@@ -19,6 +19,7 @@ Built and deployed with **PyTorch**, **JupyterLab**, and **Streamlit**.
 ## Project Structure
 
 Dog Breed/
+
 ├─ app/
 
 │ ├─ app.py # Streamlit inference app
