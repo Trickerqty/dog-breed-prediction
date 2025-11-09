@@ -105,8 +105,12 @@ col1, col2 = st.columns([1,1])
 
 with col1:
     if uploaded:
-        img = Image.open(io.BytesIO(uploaded.read()))
-        st.image(img, caption="Uploaded image", use_container_width=True)
+        try:
+            img = Image.open(io.BytesIO(uploaded.read())).convert("RGB")
+            st.image(img, caption="Uploaded image", use_container_width=True)
+        except Exception as e:
+            st.error(f"Failed to load image: {e}")
+            st.stop()
 
 with col2:
     if uploaded and st.button("Predict", type="primary", use_container_width=True):
