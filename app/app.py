@@ -89,7 +89,7 @@ def predict_image(img_pil: Image.Image, model: nn.Module, classes: List[str], to
 
 # ---------- UI ----------
 st.set_page_config(page_title="Dog Breed Prediction", page_icon="🐶", layout="centered")
-st.title("🐶 Dog Breed Prediction (ResNet50 • PyTorch)")
+st.title("🐶 Dog Breed Prediction")
 st.caption("Upload a dog image to get the top-5 predicted breeds.")
 
 # Load model once
@@ -107,7 +107,7 @@ with col1:
     if uploaded:
         try:
             img = Image.open(io.BytesIO(uploaded.read())).convert("RGB")
-            st.image(img, caption="Uploaded image", use_container_width=True)
+            st.image(img, caption="Uploaded image")
         except Exception as e:
             st.error(f"Failed to load image: {e}")
             st.stop()
