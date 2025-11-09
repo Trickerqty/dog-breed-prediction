@@ -1,0 +1,83 @@
+# =======================================
+# Python / PyTorch / Jupyter project
+# =======================================
+
+# --- Virtual environments ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- Python cache / build artifacts ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# --- Jupyter notebook checkpoints ---
+.ipynb_checkpoints/
+
+# --- Model weights and logs ---
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.h5
+*.tflite
+*.log
+*.csv
+*.jsonl
+*.npy
+*.npz
+runs/
+logs/
+checkpoints/
+wandb/
+mlruns/
+
+# --- Data (large datasets not versioned) ---
+data/raw/
+data/processed/
+data/interim/
+data/external/
+
+# --- Streamlit cache ---
+.streamlit/
+.streamlit/cache/
+.streamlit/secrets.toml
+
+# --- OS / IDE specific ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# --- Backup / temp files ---
+*.bak
+*.tmp
+*.old
+*.orig
+
+# --- Environment / configuration ---
+.env
+.env.*
+config.json
+config.yaml
+credentials.json
+
+# --- Auto-created model run folders ---
+models/run_*/
+
+# --- Keep essential files only ---
+!requirements.txt
+!README.md
+!app/
+!notebooks/
+!models/
+!data/
