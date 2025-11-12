@@ -69,7 +69,7 @@ Dog Breed/
 
 ### 1. Clone the repo
 ```bash
-git clone link
+git clone https://github.com/Trickerqty/dog-breed-prediction.git
 ```
 ```bash
 cd dog-breed-prediction
